@@ -21,6 +21,7 @@ export function renderPageShell(root, route, context = {}) {
 }
 
 function escapeHtml(text) {
+  if (text == null) return '';
   return text
     .replaceAll('&', '&amp;')
     .replaceAll('<', '&lt;')

@@ -18,6 +18,10 @@ function createMockAdapter() {
 }
 
 export function createOverwatchService(adapter = createMockAdapter()) {
+  function toPayloadObject(payload) {
+    return payload && typeof payload === 'object' && !Array.isArray(payload) ? payload : {};
+  }
+
   return {
     async getPractitioners() {
       return adapter.request(API_CONTRACTS.practitioners);
@@ -29,16 +33,16 @@ export function createOverwatchService(adapter = createMockAdapter()) {
       return adapter.request(API_CONTRACTS.bom);
     },
     async solveScheduling(payload = {}) {
-      return adapter.request({ ...API_CONTRACTS.schedulingSolve, payload });
+      return adapter.request({ ...API_CONTRACTS.schedulingSolve, payload: toPayloadObject(payload) });
     },
     async solveRouting(payload = {}) {
-      return adapter.request({ ...API_CONTRACTS.routingSolve, payload });
+      return adapter.request({ ...API_CONTRACTS.routingSolve, payload: toPayloadObject(payload) });
     },
     async getForecasting() {
       return adapter.request(API_CONTRACTS.forecasting);
     },
     async getExplainability(payload = {}) {
-      return adapter.request({ ...API_CONTRACTS.explainability, payload });
+      return adapter.request({ ...API_CONTRACTS.explainability, payload: toPayloadObject(payload) });
     }
   };
 }

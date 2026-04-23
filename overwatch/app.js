@@ -18,6 +18,7 @@ function applyRoute(route) {
 }
 
 function renderNav() {
+  if (!navRoot) return;
   const currentRoute = getState().route;
   navRoot.innerHTML = OVERWATCH_ROUTES.map((route) => {
     const active = route === currentRoute;
@@ -26,10 +27,12 @@ function renderNav() {
 }
 
 function render() {
+  if (!appRoot) return;
   const state = getState();
   renderNav();
   renderPageShell(appRoot, state.route, {
     loading: state.loading,
+    lastError: state.lastError,
     datasets: {
       practitioners: state.practitioners.length,
       availability: state.availability.length,
@@ -56,20 +59,29 @@ async function bootstrapData() {
       practitioners: practitioners?.data?.items || [],
       availability: availability?.data?.items || [],
       bomItems: bomItems?.data?.items || [],
-      forecasts: forecasts?.data?.items || []
+      forecasts: forecasts?.data?.items || [],
+      lastError: null
+    });
+  } catch (error) {
+    console.error('Overwatch bootstrap failed:', error);
+    patchState({
+      lastError: error?.message || 'Failed to load Overwatch bootstrap data.'
     });
   } finally {
     setLoading(false);
   }
 }
 
-navRoot.addEventListener('click', (event) => {
-  const target = event.target;
-  if (!(target instanceof HTMLElement)) return;
-  const route = target.dataset.route;
-  if (!route) return;
-  applyRoute(route);
-});
+if (navRoot) {
+  navRoot.addEventListener('click', (event) => {
+    const target = event.target;
+    if (!(target instanceof HTMLElement)) return;
+    const button = target.closest('button[data-route]');
+    const route = button?.dataset?.route;
+    if (!route) return;
+    applyRoute(route);
+  });
+}
 
 window.addEventListener('hashchange', () => applyRoute(getRouteFromHash()));
 subscribe(render);

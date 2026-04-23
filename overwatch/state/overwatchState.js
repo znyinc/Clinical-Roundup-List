@@ -7,13 +7,14 @@ const state = {
   schedules: [],
   routes: [],
   forecasts: [],
-  recommendations: []
+  recommendations: [],
+  lastError: null
 };
 
 const listeners = new Set();
 
 export function getState() {
-  return state;
+  return { ...state };
 }
 
 export function setRoute(route) {
