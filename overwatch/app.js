@@ -56,10 +56,10 @@ async function bootstrapData() {
     ]);
 
     patchState({
-      practitioners: practitioners?.data?.items || [],
-      availability: availability?.data?.items || [],
-      bomItems: bomItems?.data?.items || [],
-      forecasts: forecasts?.data?.items || [],
+      practitioners: extractItems(practitioners),
+      availability: extractItems(availability),
+      bomItems: extractItems(bomItems),
+      forecasts: extractItems(forecasts),
       lastError: null
     });
   } catch (error) {
@@ -75,7 +75,7 @@ async function bootstrapData() {
 if (navRoot) {
   navRoot.addEventListener('click', (event) => {
     const target = event.target;
-    if (!(target instanceof HTMLElement)) return;
+    if (!target || typeof target.closest !== 'function') return;
     const button = target.closest('button[data-route]');
     const route = button?.dataset?.route;
     if (!route) return;
@@ -88,3 +88,9 @@ subscribe(render);
 
 applyRoute(getRouteFromHash());
 bootstrapData();
+
+function extractItems(response) {
+  if (Array.isArray(response?.data?.items)) return response.data.items;
+  if (Array.isArray(response?.data)) return response.data;
+  return [];
+}

@@ -19,7 +19,13 @@ function createMockAdapter() {
 
 export function createOverwatchService(adapter = createMockAdapter()) {
   function toPayloadObject(payload) {
-    return payload && typeof payload === 'object' && !Array.isArray(payload) ? payload : {};
+    if (payload && typeof payload === 'object' && !Array.isArray(payload)) {
+      return payload;
+    }
+    if (payload !== undefined && payload !== null) {
+      console.warn('Overwatch service expected object payload, received:', typeof payload);
+    }
+    return {};
   }
 
   return {

@@ -14,7 +14,7 @@ const state = {
 const listeners = new Set();
 
 export function getState() {
-  return { ...state };
+  return cloneState(state);
 }
 
 export function setRoute(route) {
@@ -38,5 +38,13 @@ export function subscribe(listener) {
 }
 
 function notify() {
-  listeners.forEach((listener) => listener(state));
+  const snapshot = getState();
+  listeners.forEach((listener) => listener(snapshot));
+}
+
+function cloneState(value) {
+  if (typeof structuredClone === 'function') {
+    return structuredClone(value);
+  }
+  return JSON.parse(JSON.stringify(value));
 }
