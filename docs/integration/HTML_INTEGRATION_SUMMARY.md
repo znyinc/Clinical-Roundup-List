@@ -147,13 +147,13 @@ Once you fill in M365_CONFIG:
 ## Next: 3-Step Setup Guide
 
 ### Step 1: Entra ID App Registration (15 min)
-See [INSTALLATION_GUIDE.md](./INSTALLATION_GUIDE.md) **Step 1**:
+See [INSTALLATION_GUIDE.md](../deployment/INSTALLATION_GUIDE.md) **Step 1**:
 - Go to Azure Portal → App Registrations → + New Registration
 - Name: "Clinical Rounding Platform"
 - Copy: **Client ID**, **Tenant ID**
 
 ### Step 2: Create SharePoint Lists (20 min)
-See [INSTALLATION_GUIDE.md](./INSTALLATION_GUIDE.md) **Step 2**:
+See [INSTALLATION_GUIDE.md](../deployment/INSTALLATION_GUIDE.md) **Step 2**:
 - Go to SharePoint site → Create 4 new lists:
   - Patients (19 columns per schema)
   - OnCallSchedule (3 columns)
@@ -246,10 +246,10 @@ Save & test!
 
 ## Next Files to Review
 
-1. **[INSTALLATION_GUIDE.md](./INSTALLATION_GUIDE.md)** - Step-by-step M365 setup
-2. **[USERGUIDE.md](./USERGUIDE.md)** - How to use the app
-3. **[M365_MIGRATION.md](./M365_MIGRATION.md)** - Architecture details
-4. **[AGENTS.md](./AGENTS.md)** - Decision log
+1. **[INSTALLATION_GUIDE.md](../deployment/INSTALLATION_GUIDE.md)** - Step-by-step M365 setup
+2. **[USERGUIDE.md](../user/USERGUIDE.md)** - How to use the app
+3. **[M365_MIGRATION.md](../architecture/M365_MIGRATION.md)** - Architecture details
+4. **[AGENTS.md](../architecture/AGENTS.md)** - Decision log
 
 ---
 
