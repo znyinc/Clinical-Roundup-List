@@ -58,7 +58,7 @@ python -m http.server 3000
 2. Log in with Microsoft 365 account.
 3. Data syncs via SharePoint Lists in real time.
 
-See **INSTALLATION_GUIDE.md** and **M365_MIGRATION.md** for step-by-step instructions.
+See **[INSTALLATION_GUIDE.md](./docs/deployment/INSTALLATION_GUIDE.md)** and **[M365_MIGRATION.md](./docs/architecture/M365_MIGRATION.md)** for step-by-step instructions.
 
 ---
 
@@ -86,8 +86,8 @@ Perfect for testing or small teams:
 3. Create SharePoint Lists
 4. Push code → Auto-deploy ✨
 
-📖 **See: [AZURE_DEPLOY_QUICKSTART.md](./AZURE_DEPLOY_QUICKSTART.md)** for 15-minute setup guide  
-📖 **Full guide: [AZURE_STATIC_WEB_APP_DEPLOYMENT.md](./AZURE_STATIC_WEB_APP_DEPLOYMENT.md)**
+📖 **See: [AZURE_DEPLOY_QUICKSTART.md](docs/deployment/AZURE_DEPLOY_QUICKSTART.md)** for 15-minute setup guide  
+📖 **Full guide: [AZURE_STATIC_WEB_APP_DEPLOYMENT.md](docs/deployment/AZURE_STATIC_WEB_APP_DEPLOYMENT.md)**
 
 ### Option 3: Netlify (Alternative)
 - See [release/NETLIFY_DEPLOYMENT.md](./release/NETLIFY_DEPLOYMENT.md)

@@ -404,9 +404,9 @@ If scaling needs change:
 
 ## References & Links
 
-- [M365_MIGRATION.md](./M365_MIGRATION.md) - Pure M365 architecture
-- [INSTALLATION_GUIDE.md](./INSTALLATION_GUIDE.md) - Setup steps
-- [USERGUIDE.md](./USERGUIDE.md) - End-user guide
+- [M365_MIGRATION.md](M365_MIGRATION.md) - Pure M365 architecture
+- [INSTALLATION_GUIDE.md](../deployment/INSTALLATION_GUIDE.md) - Setup steps
+- [USERGUIDE.md](../user/USERGUIDE.md) - End-user guide
 - [clinical-rounding-adaptive.html](./clinical-rounding-adaptive.html) - Main app
 - [m365-integration.js](./m365-integration.js) - Graph API integration
 

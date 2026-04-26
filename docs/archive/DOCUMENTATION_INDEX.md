@@ -9,25 +9,25 @@
 ## 🎯 Where to Start
 
 ### 🚀 I Just Want to Use It Now
-**Start Here**: [QUICK_REFERENCE.md](./QUICK_REFERENCE.md) (5 min read)
+**Start Here**: [QUICK_REFERENCE.md](../user/QUICK_REFERENCE.md) (5 min read)
 - Quickest way to get going
 - Test immediately in Local Mode
 - No setup needed
 
 ### 📚 I Want to Understand Everything
-**Start Here**: [FINAL_STATUS.md](./FINAL_STATUS.md) (15 min read)
+**Start Here**: [FINAL_STATUS.md](FINAL_STATUS.md) (15 min read)
 - Complete status summary
 - How it works
 - What changed from Firebase
 
 ### 🔧 I Want to Set Up M365
-**Start Here**: [INSTALLATION_GUIDE.md](./INSTALLATION_GUIDE.md) (1-2 hours)
+**Start Here**: [INSTALLATION_GUIDE.md](../deployment/INSTALLATION_GUIDE.md) (1-2 hours)
 - Step-by-step M365 setup
 - SharePoint Lists creation
 - Configuration guide
 
 ### 💻 I Want Technical Details
-**Start Here**: [HTML_INTEGRATION_CHANGES.md](./HTML_INTEGRATION_CHANGES.md) (30 min read)
+**Start Here**: [HTML_INTEGRATION_CHANGES.md](../integration/HTML_INTEGRATION_CHANGES.md) (30 min read)
 - Before/after code comparison
 - What was changed
 - Why it was changed
@@ -39,28 +39,28 @@
 ### Core Setup & Status (Consolidated)
 | Document | Purpose | Read Time | Status |
 |----------|---------|-----------|--------|
-| [FINAL_STATUS.md](./FINAL_STATUS.md) | Current status & next steps | 15 min | ✅ CONSOLIDATED (includes INTEGRATION_READY + COMPLETION_REPORT) |
-| [QUICK_REFERENCE.md](./QUICK_REFERENCE.md) | Quick start guide | 5 min | ✅ ACTIVE |
+| [FINAL_STATUS.md](FINAL_STATUS.md) | Current status & next steps | 15 min | ✅ CONSOLIDATED (includes INTEGRATION_READY + COMPLETION_REPORT) |
+| [QUICK_REFERENCE.md](../user/QUICK_REFERENCE.md) | Quick start guide | 5 min | ✅ ACTIVE |
 
 ### Implementation Details
 | Document | Purpose | Read Time | Status |
 |----------|---------|-----------|--------|
-| [HTML_INTEGRATION_SUMMARY.md](./HTML_INTEGRATION_SUMMARY.md) | Detailed overview | 25 min | ✅ ACTIVE |
-| [HTML_INTEGRATION_CHANGES.md](./HTML_INTEGRATION_CHANGES.md) | Before/after code | 30 min | ✅ ACTIVE |
+| [HTML_INTEGRATION_SUMMARY.md](../integration/HTML_INTEGRATION_SUMMARY.md) | Detailed overview | 25 min | ✅ ACTIVE |
+| [HTML_INTEGRATION_CHANGES.md](../integration/HTML_INTEGRATION_CHANGES.md) | Before/after code | 30 min | ✅ ACTIVE |
 
 ### M365 Setup & Configuration (Consolidated)
 | Document | Purpose | Read Time | Status |
 |----------|---------|-----------|--------|
-| [INSTALLATION_GUIDE.md](./INSTALLATION_GUIDE.md) | Step-by-step M365 setup | 60 min | ✅ ACTIVE |
-| [M365_MIGRATION.md](./M365_MIGRATION.md) | Architecture & design | 45 min | ✅ CONSOLIDATED (includes MIGRATION_SUMMARY) |
+| [INSTALLATION_GUIDE.md](../deployment/INSTALLATION_GUIDE.md) | Step-by-step M365 setup | 60 min | ✅ ACTIVE |
+| [M365_MIGRATION.md](../architecture/M365_MIGRATION.md) | Architecture & design | 45 min | ✅ CONSOLIDATED (includes MIGRATION_SUMMARY) |
 
 ### User & Architecture
 | Document | Purpose | Read Time | Status |
 |----------|---------|-----------|--------|
-| [USERGUIDE.md](./USERGUIDE.md) | How to use the app | 30 min | ✅ EXISTING |
-| [AGENTS.md](./AGENTS.md) | Architecture decisions | 60 min | ✅ EXISTING |
-| [GRAPHIC_USER_GUIDE.html](./GRAPHIC_USER_GUIDE.html) | Visual map of UI controls/functions | 10 min | ✅ NEW |
-| [AI_AUGMENTATION_OPTIONS.md](./AI_AUGMENTATION_OPTIONS.md) | AI enhancement opportunity list | 5 min | ✅ NEW |
+| [USERGUIDE.md](../user/USERGUIDE.md) | How to use the app | 30 min | ✅ EXISTING |
+| [AGENTS.md](../architecture/AGENTS.md) | Architecture decisions | 60 min | ✅ EXISTING |
+| [GRAPHIC_USER_GUIDE.html](../user/GRAPHIC_USER_GUIDE.html) | Visual map of UI controls/functions | 10 min | ✅ NEW |
+| [AI_AUGMENTATION_OPTIONS.md](../architecture/AI_AUGMENTATION_OPTIONS.md) | AI enhancement opportunity list | 5 min | ✅ NEW |
 
 ### Code & Project
 | Document | Purpose | Read Time | Status |
@@ -238,16 +238,16 @@ python -m http.server 3000
 **Time**: 2 minutes
 
 ### Fast & Informed (I Want to Understand)
-1. Read [QUICK_REFERENCE.md](./QUICK_REFERENCE.md) - 5 min
+1. Read [QUICK_REFERENCE.md](../user/QUICK_REFERENCE.md) - 5 min
 2. Test the app locally - 5 min
 3. Decide: Keep testing, or set up M365?
 
 **Time**: 10 minutes
 
 ### Complete Path (I Want Everything)
-1. Read [FINAL_STATUS.md](./FINAL_STATUS.md) - 15 min
-2. Read [HTML_INTEGRATION_CHANGES.md](./HTML_INTEGRATION_CHANGES.md) - 30 min
-3. If you want M365: Follow [INSTALLATION_GUIDE.md](./INSTALLATION_GUIDE.md) - 60 min
+1. Read [FINAL_STATUS.md](FINAL_STATUS.md) - 15 min
+2. Read [HTML_INTEGRATION_CHANGES.md](../integration/HTML_INTEGRATION_CHANGES.md) - 30 min
+3. If you want M365: Follow [INSTALLATION_GUIDE.md](../deployment/INSTALLATION_GUIDE.md) - 60 min
 4. Test & deploy
 
 **Time**: 1-2 hours
@@ -307,14 +307,14 @@ python -m http.server 3000
 **Time**: 2-5 minutes
 
 ### Option B: Understand Everything
-1. Read [FINAL_STATUS.md](./FINAL_STATUS.md)
-2. Read [HTML_INTEGRATION_CHANGES.md](./HTML_INTEGRATION_CHANGES.md)
+1. Read [FINAL_STATUS.md](FINAL_STATUS.md)
+2. Read [HTML_INTEGRATION_CHANGES.md](../integration/HTML_INTEGRATION_CHANGES.md)
 
 **Outcome**: Full understanding of changes  
 **Time**: 45 minutes
 
 ### Option C: Set Up M365
-1. Follow [INSTALLATION_GUIDE.md](./INSTALLATION_GUIDE.md)
+1. Follow [INSTALLATION_GUIDE.md](../deployment/INSTALLATION_GUIDE.md)
 2. Update M365_CONFIG in HTML
 3. Test M365 Mode
 
@@ -376,11 +376,11 @@ A: Yes! Just fill in M365_CONFIG and reload to switch modes.
 
 ## 📞 Quick Links
 
-- [Read QUICK_REFERENCE.md](./QUICK_REFERENCE.md)
-- [Read FINAL_STATUS.md](./FINAL_STATUS.md)
-- [Read INSTALLATION_GUIDE.md](./INSTALLATION_GUIDE.md)
-- [Open GRAPHIC_USER_GUIDE.html](./GRAPHIC_USER_GUIDE.html)
-- [Read AI_AUGMENTATION_OPTIONS.md](./AI_AUGMENTATION_OPTIONS.md)
+- [Read QUICK_REFERENCE.md](../user/QUICK_REFERENCE.md)
+- [Read FINAL_STATUS.md](FINAL_STATUS.md)
+- [Read INSTALLATION_GUIDE.md](../deployment/INSTALLATION_GUIDE.md)
+- [Open GRAPHIC_USER_GUIDE.html](../user/GRAPHIC_USER_GUIDE.html)
+- [Read AI_AUGMENTATION_OPTIONS.md](../architecture/AI_AUGMENTATION_OPTIONS.md)
 - [View M365_CONFIG](./clinical-rounding-adaptive.html#L854)
 
 ---

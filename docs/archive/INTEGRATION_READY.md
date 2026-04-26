@@ -129,7 +129,7 @@ open http://localhost:3000/clinical-rounding-adaptive.html
 ---
 
 ### Test 2: M365 Mode (After Setup)
-1. Complete [INSTALLATION_GUIDE.md](./INSTALLATION_GUIDE.md) Steps 1-2
+1. Complete [INSTALLATION_GUIDE.md](../deployment/INSTALLATION_GUIDE.md) Steps 1-2
 2. Update M365_CONFIG values in HTML (~line 860)
 3. Reload page
 
@@ -216,10 +216,10 @@ open http://localhost:3000/clinical-rounding-adaptive.html
 ### Immediate (Today)
 1. ✅ Review this document
 2. ✅ Test in Local Mode (15 min)
-3. Read [HTML_INTEGRATION_CHANGES.md](./HTML_INTEGRATION_CHANGES.md) for technical details
+3. Read [HTML_INTEGRATION_CHANGES.md](../integration/HTML_INTEGRATION_CHANGES.md) for technical details
 
 ### This Week
-1. Complete [INSTALLATION_GUIDE.md](./INSTALLATION_GUIDE.md) Steps 1-2
+1. Complete [INSTALLATION_GUIDE.md](../deployment/INSTALLATION_GUIDE.md) Steps 1-2
    - Register Entra ID app
    - Create SharePoint Lists
 2. Update M365_CONFIG in HTML
@@ -318,9 +318,9 @@ A: 15-second polling is sufficient for clinical rounding. Upgrade to SignalR onl
 1. **Check Local Mode first** (test without M365)
 2. **Check browser console** - F12 → Console tab for errors
 3. **Read the relevant guide**:
-   - Setup issues? → [INSTALLATION_GUIDE.md](./INSTALLATION_GUIDE.md)
-   - Technical questions? → [HTML_INTEGRATION_CHANGES.md](./HTML_INTEGRATION_CHANGES.md)
-   - Architecture questions? → [AGENTS.md](./AGENTS.md)
+   - Setup issues? → [INSTALLATION_GUIDE.md](../deployment/INSTALLATION_GUIDE.md)
+   - Technical questions? → [HTML_INTEGRATION_CHANGES.md](../integration/HTML_INTEGRATION_CHANGES.md)
+   - Architecture questions? → [AGENTS.md](../architecture/AGENTS.md)
 
 4. **Test checklist**:
    - Is `m365-integration.js` loaded? (F12 → Network tab)
@@ -332,11 +332,11 @@ A: 15-second polling is sufficient for clinical rounding. Upgrade to SignalR onl
 
 ## 🎓 Learning Resources
 
-- **M365 Concepts**: See [M365_MIGRATION.md](./M365_MIGRATION.md)
-- **Setup Steps**: See [INSTALLATION_GUIDE.md](./INSTALLATION_GUIDE.md)
-- **User Guide**: See [USERGUIDE.md](./USERGUIDE.md)
-- **Architecture**: See [AGENTS.md](./AGENTS.md)
-- **Code Details**: See [HTML_INTEGRATION_CHANGES.md](./HTML_INTEGRATION_CHANGES.md)
+- **M365 Concepts**: See [M365_MIGRATION.md](../architecture/M365_MIGRATION.md)
+- **Setup Steps**: See [INSTALLATION_GUIDE.md](../deployment/INSTALLATION_GUIDE.md)
+- **User Guide**: See [USERGUIDE.md](../user/USERGUIDE.md)
+- **Architecture**: See [AGENTS.md](../architecture/AGENTS.md)
+- **Code Details**: See [HTML_INTEGRATION_CHANGES.md](../integration/HTML_INTEGRATION_CHANGES.md)
 
 ---
 
@@ -351,7 +351,7 @@ Use Local Mode for development and testing. No M365 setup needed.
 - Perfect for: Quick testing, feature development, demos
 
 ### Path 2: Production Deployment  
-Follow [INSTALLATION_GUIDE.md](./INSTALLATION_GUIDE.md) to set up M365.
+Follow [INSTALLATION_GUIDE.md](../deployment/INSTALLATION_GUIDE.md) to set up M365.
 - Perfect for: Multi-user teams, data persistence, cloud sync
 
 **Choose your path and let's go! 🚀**

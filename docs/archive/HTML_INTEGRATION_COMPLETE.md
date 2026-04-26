@@ -100,10 +100,10 @@ const M365_CONFIG = {
 ```
 
 **How to get these values**:
-- See [INSTALLATION_GUIDE.md](./INSTALLATION_GUIDE.md) Steps 1-2 for detailed instructions
+- See [INSTALLATION_GUIDE.md](../deployment/INSTALLATION_GUIDE.md) Steps 1-2 for detailed instructions
 
 ### Step 2: Create SharePoint Lists
-- Run through [INSTALLATION_GUIDE.md](./INSTALLATION_GUIDE.md) to:
+- Run through [INSTALLATION_GUIDE.md](../deployment/INSTALLATION_GUIDE.md) to:
   - Register Entra ID app
   - Create 4 SharePoint Lists
   - Gather all IDs
@@ -170,9 +170,9 @@ This is perfect for testing without M365 setup!
 ## Next: Documentation
 
 See:
-- [INSTALLATION_GUIDE.md](./INSTALLATION_GUIDE.md) - Full M365 setup
-- [USERGUIDE.md](./USERGUIDE.md) - For end users
-- [AGENTS.md](./AGENTS.md) - Architecture decisions
+- [INSTALLATION_GUIDE.md](../deployment/INSTALLATION_GUIDE.md) - Full M365 setup
+- [USERGUIDE.md](../user/USERGUIDE.md) - For end users
+- [AGENTS.md](../architecture/AGENTS.md) - Architecture decisions
 
 ---
 

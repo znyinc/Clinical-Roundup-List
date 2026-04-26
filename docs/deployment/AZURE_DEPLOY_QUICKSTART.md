@@ -53,7 +53,7 @@ az staticwebapp create --name clinical-rounding-app --resource-group clinical-ro
 
 Create 4 lists in SharePoint:
 
-1. **Patients** - Patient records (see full schema in [AZURE_STATIC_WEB_APP_DEPLOYMENT.md](./AZURE_STATIC_WEB_APP_DEPLOYMENT.md#3b-create-lists))
+1. **Patients** - Patient records (see full schema in [AZURE_STATIC_WEB_APP_DEPLOYMENT.md](AZURE_STATIC_WEB_APP_DEPLOYMENT.md#3b-create-lists))
 2. **OnCallSchedule** - On-call provider schedule
 3. **Settings** - App settings (default provider, hospitals)
 4. **AuditLogs** - Audit trail for compliance
@@ -119,10 +119,10 @@ AZURE_CLIENT_SECRET=client-secret-value
 
 ## 📚 Detailed Documentation
 
-- **Full Deployment Guide**: [AZURE_STATIC_WEB_APP_DEPLOYMENT.md](./AZURE_STATIC_WEB_APP_DEPLOYMENT.md)
-- **Architecture Details**: [_archive/AZURE_MIGRATION.md](./_archive/AZURE_MIGRATION.md)
-- **User Guide**: [USERGUIDE.md](./USERGUIDE.md)
-- **Installation**: [INSTALLATION_GUIDE.md](./INSTALLATION_GUIDE.md)
+- **Full Deployment Guide**: [AZURE_STATIC_WEB_APP_DEPLOYMENT.md](AZURE_STATIC_WEB_APP_DEPLOYMENT.md)
+- **Architecture Details**: [_archive/AZURE_MIGRATION.md](../archive/AZURE_MIGRATION.md)
+- **User Guide**: [USERGUIDE.md](../user/USERGUIDE.md)
+- **Installation**: [INSTALLATION_GUIDE.md](INSTALLATION_GUIDE.md)
 
 ---
 
@@ -171,7 +171,7 @@ AZURE_CLIENT_SECRET=client-secret-value
 
 ## 📞 Support
 
-**Need help?** See detailed troubleshooting in [AZURE_STATIC_WEB_APP_DEPLOYMENT.md](./AZURE_STATIC_WEB_APP_DEPLOYMENT.md#troubleshooting)
+**Need help?** See detailed troubleshooting in [AZURE_STATIC_WEB_APP_DEPLOYMENT.md](AZURE_STATIC_WEB_APP_DEPLOYMENT.md#troubleshooting)
 
 **Azure Support**: https://learn.microsoft.com/en-us/azure/static-web-apps/
 

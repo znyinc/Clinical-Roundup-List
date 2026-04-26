@@ -11,15 +11,15 @@ Your Clinical Rounding application is **fully configured** for Azure Static Web 
 - **`api/host.json`** - Azure Functions runtime configuration
 
 ### ✅ Documentation Created
-1. **[AZURE_DEPLOY_QUICKSTART.md](./AZURE_DEPLOY_QUICKSTART.md)** - 15-minute deployment checklist
-2. **[AZURE_STATIC_WEB_APP_DEPLOYMENT.md](./AZURE_STATIC_WEB_APP_DEPLOYMENT.md)** - Complete deployment guide (600+ lines)
+1. **[AZURE_DEPLOY_QUICKSTART.md](AZURE_DEPLOY_QUICKSTART.md)** - 15-minute deployment checklist
+2. **[AZURE_STATIC_WEB_APP_DEPLOYMENT.md](AZURE_STATIC_WEB_APP_DEPLOYMENT.md)** - Complete deployment guide (600+ lines)
 3. **Updated [README.md](./README.md)** - Added deployment options section
 
 ### ✅ Existing Documentation (Referenced)
-- **[_archive/AZURE_MIGRATION.md](./_archive/AZURE_MIGRATION.md)** - Architecture details
-- **[INSTALLATION_GUIDE.md](./INSTALLATION_GUIDE.md)** - General installation instructions
-- **[USERGUIDE.md](./USERGUIDE.md)** - End-user documentation
-- **[M365_MIGRATION.md](./M365_MIGRATION.md)** - M365 integration details
+- **[_archive/AZURE_MIGRATION.md](../archive/AZURE_MIGRATION.md)** - Architecture details
+- **[INSTALLATION_GUIDE.md](INSTALLATION_GUIDE.md)** - General installation instructions
+- **[USERGUIDE.md](../user/USERGUIDE.md)** - End-user documentation
+- **[M365_MIGRATION.md](../architecture/M365_MIGRATION.md)** - M365 integration details
 
 ---
 
@@ -74,7 +74,7 @@ Create 4 lists in your SharePoint site:
 3. **Settings** (app settings)
 4. **AuditLogs** (compliance audit trail)
 
-📖 **See full schemas in**: [AZURE_STATIC_WEB_APP_DEPLOYMENT.md](./AZURE_STATIC_WEB_APP_DEPLOYMENT.md#3b-create-lists)
+📖 **See full schemas in**: [AZURE_STATIC_WEB_APP_DEPLOYMENT.md](AZURE_STATIC_WEB_APP_DEPLOYMENT.md#3b-create-lists)
 
 Get List IDs using [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer):
 ```
@@ -170,17 +170,17 @@ Check deployment status: GitHub → **Actions** tab
 ## 📚 Documentation Files
 
 ### For Deployment
-- **[AZURE_DEPLOY_QUICKSTART.md](./AZURE_DEPLOY_QUICKSTART.md)** ← Start here! (checklist)
-- **[AZURE_STATIC_WEB_APP_DEPLOYMENT.md](./AZURE_STATIC_WEB_APP_DEPLOYMENT.md)** ← Complete guide (troubleshooting, security)
+- **[AZURE_DEPLOY_QUICKSTART.md](AZURE_DEPLOY_QUICKSTART.md)** ← Start here! (checklist)
+- **[AZURE_STATIC_WEB_APP_DEPLOYMENT.md](AZURE_STATIC_WEB_APP_DEPLOYMENT.md)** ← Complete guide (troubleshooting, security)
 
 ### For Architecture
-- **[_archive/AZURE_MIGRATION.md](./_archive/AZURE_MIGRATION.md)** - Architecture decisions
-- **[M365_MIGRATION.md](./M365_MIGRATION.md)** - SharePoint integration details
-- **[AGENTS.md](./AGENTS.md)** - Development conversation log
+- **[_archive/AZURE_MIGRATION.md](../archive/AZURE_MIGRATION.md)** - Architecture decisions
+- **[M365_MIGRATION.md](../architecture/M365_MIGRATION.md)** - SharePoint integration details
+- **[AGENTS.md](../architecture/AGENTS.md)** - Development conversation log
 
 ### For Users
-- **[USERGUIDE.md](./USERGUIDE.md)** - How to use the app
-- **[INSTALLATION_GUIDE.md](./INSTALLATION_GUIDE.md)** - M365 setup (if not using Azure)
+- **[USERGUIDE.md](../user/USERGUIDE.md)** - How to use the app
+- **[INSTALLATION_GUIDE.md](INSTALLATION_GUIDE.md)** - M365 setup (if not using Azure)
 
 ---
 
@@ -229,10 +229,10 @@ Check deployment status: GitHub → **Actions** tab
 
 ### Resources
 
-- **Full Troubleshooting**: [AZURE_STATIC_WEB_APP_DEPLOYMENT.md](./AZURE_STATIC_WEB_APP_DEPLOYMENT.md#troubleshooting)
+- **Full Troubleshooting**: [AZURE_STATIC_WEB_APP_DEPLOYMENT.md](AZURE_STATIC_WEB_APP_DEPLOYMENT.md#troubleshooting)
 - **Azure Docs**: https://learn.microsoft.com/en-us/azure/static-web-apps/
 - **Microsoft Graph**: https://learn.microsoft.com/en-us/graph/
-- **Your User Guide**: [USERGUIDE.md](./USERGUIDE.md)
+- **Your User Guide**: [USERGUIDE.md](../user/USERGUIDE.md)
 
 ---
 
@@ -240,10 +240,10 @@ Check deployment status: GitHub → **Actions** tab
 
 Your app is **100% ready** for Azure Static Web Apps deployment. Just follow the 5 steps above and you'll be live in ~25 minutes!
 
-**Start here:** [AZURE_DEPLOY_QUICKSTART.md](./AZURE_DEPLOY_QUICKSTART.md)
+**Start here:** [AZURE_DEPLOY_QUICKSTART.md](AZURE_DEPLOY_QUICKSTART.md)
 
 ---
 
-**Questions?** Check the comprehensive guide: [AZURE_STATIC_WEB_APP_DEPLOYMENT.md](./AZURE_STATIC_WEB_APP_DEPLOYMENT.md)
+**Questions?** Check the comprehensive guide: [AZURE_STATIC_WEB_APP_DEPLOYMENT.md](AZURE_STATIC_WEB_APP_DEPLOYMENT.md)
 
 **Good luck with your deployment! 🚀**
